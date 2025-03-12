@@ -131,22 +131,11 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    ul {
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-    }
-
-    nav a {
-        display: block;
-        padding: 10px;
-        font-size: 16px;
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    main {
+        max-width: 90%;
+        padding: 15px;
     }
 
     .card {
@@ -157,25 +146,55 @@ footer {
 
     .inline {
         flex-direction: column;
+        align-items: center;
     }
 
     .cardImage {
-        width: 200px;
-        height: 180px;
-        border-radius: 50%;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
     h1 {
-        font-size: 1.8em;
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
     }
 
     p {
         font-size: 1em;
     }
 
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
     .card {
-        padding: 15px;
+        padding: 10px;
+    }
+
+    .cardImage {
+        max-width: 250px;
     }
 }
