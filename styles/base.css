@@ -90,7 +90,6 @@ main {
     border-radius: 10px;
 }
 
-
 .card {
     background: #ecf0f1;
     padding: 20px;
@@ -110,7 +109,6 @@ main {
     justify-content: center;
 }
 
-
 .cardImage {
     width: 240px;
     height: 200px;
@@ -122,7 +120,6 @@ main {
 .cardText {
     flex: 1;
     font-size: 18px;
-
 }
 
 /* Footer */
@@ -134,30 +131,51 @@ footer {
     margin-top: 20px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
 
-
-
-
-@media screen and (max-width: 600px) {
     ul {
         flex-direction: column;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 10px;
+        text-align: center;
     }
 
     nav a {
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
+        display: block;
+        padding: 10px;
+        font-size: 16px;
     }
 
     .card {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .inline {
+        flex-direction: column;
     }
 
     .cardImage {
-        width: 100%;
-        height: auto;
+        width: 200px;
+        height: 180px;
+        border-radius: 50%;
     }
-    
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .card {
+        padding: 15px;
+    }
 }
