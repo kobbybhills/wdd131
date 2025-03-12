@@ -1,0 +1,134 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.h2 {
+    font-size: 2.0em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.italics {
+    font-style: italic;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.h1NameSpan {
+    color: #1abc9c;
+}
+
+/* Navigation */
+nav {
+    background-color: #34495e;
+    padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.card {
+    background: #ecf0f1;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 800px;
+}
+
+.inline {
+    display: flex;
+    flex: 1 1 0;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.cardImage {
+    width: 240px;
+    height: 200px;
+    border-radius: 100px;
+    border: #333 solid 1px;
+    padding: 5px;
+}
+
+.cardText {
+    flex: 1;
+
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}
