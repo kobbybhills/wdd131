@@ -1,0 +1,23 @@
+/* temples-large.css - Styles for larger screens */
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
