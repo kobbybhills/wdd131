@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #C8102E;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.container {
+    position: relative;
+    background: rgba(229, 233, 12, 0.8);
+}
+
+.background {
+    width: 100%;
+    height: auto;
+}
+
+.info-box {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.data {
+    top: 20px;
+    left: 20px;
+    background: rgba(12, 14, 12, 0.8);
+    color: white;
+}
+
+.weather {
+    bottom: 20px;
+    right: 20px;
+    background: rgba(12, 14, 12, 0.8);
+    color: white;
+}
+
+footer {
+    background: rgba(0, 100, 0, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+/*THE RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .info-box {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+        background: rgba(0, 100, 0, 0.9);
+        color: white;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .info-box {
+        width: 95%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
