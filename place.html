@@ -3,52 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madagascar Info</title>
+    <meta name="description" content="Facts about Ghana">
+    <title>Ghana Info</title>
     <link rel="stylesheet" href="place.css">
     <script defer src="place.js"></script>
-    
 </head>
 <body>
     <header>
         <h1>Ghana</h1>
     </header>
-    
-    <main>
 
+    <main>
         <div class="container">
-            <img class="hero-img" src="images/GH_SQUARE.jpg" alt="Black Star Sqaure">
-            
+            <img class="hero-img"src="images/GH_SQUARE.webp" alt="Black Star Square">
+
             <div class="info-box data">
                 <h2>Data</h2>
                 <p><strong>Area:</strong> 238,533 sq km</p>
                 <p><strong>Population:</strong> 32,833,031</p>
                 <p><strong>Capital:</strong> Accra</p>
-                <p><strong>Languages:</strong> English,Akan,Ewe,Ga</p>
+                <p><strong>Languages:</strong> English, Akan, Ewe, Ga</p>
                 <p><strong>Currency:</strong> Ghanaian Cedi</p>
                 <p><strong>Time Zone:</strong> UTC+0</p>
                 <p><strong>Calling Code:</strong> +233</p>
                 <p><strong>Internet TLD:</strong> .gh</p>
             </div>
-            
+
             <div class="info-box weather">
-                <h2>Weather <span class="icon">⛅</span></h2>
-                <p><strong>Temperature:</strong> 10°C</p>
+                <h2 class="weather-title">Weather <span class="icon weather-svg"></span></h2>
+                <p><strong>Temperature:</strong> <span id="temp">10</span>°C</p>
                 <p><strong>Conditions:</strong> Partly Cloudy</p>
-                <p><strong>Wind:</strong> 5 km/h</p>
-                <p><strong>Wind Chill:</strong> 9.8°C</p>
+                <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
             </div>
-
         </div>
-
-        
     </main>
-
-
 
     <footer>
         <p>&copy; 2025 - Douglas Justice - Ghana</p>
         <p>Last Modification: <span id="last-modified"></span></p>
     </footer>
-    
 </body>
 </html>
