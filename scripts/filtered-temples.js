@@ -95,6 +95,7 @@ const temples = [
         "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-1389-thumb.jpg"
     },
     
+    
     {
       templeName: "Cardston Alberta",
       location: "Cardston, Alberta, Canada",
@@ -103,6 +104,7 @@ const temples = [
       imageUrl:
         "https://churchofjesuschristtemples.org/assets/img/temples/cardston-alberta-temple/cardston-alberta-temple-42433-thumb.jpg"
     },
+    //I Added more temple objects here...
     {
         templeName: "Accra Ghana",
         location: "Accra, Ghana",
