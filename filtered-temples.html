@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Temple Album" />
+    <meta name="author" content="Douglas Justice" />
   <title>Temple Picture Album</title>
-  <link rel="stylesheet" href="filtered-temples.css" />
+  <link rel="stylesheet" href="styles/filtered-temples.css"/>
+  <script defer src="scripts/filtered-temples.js"></script>
+
+
 </head>
 <body>
   <header>
@@ -21,17 +26,17 @@
 
   <main>
     <div>
-      <button onclick="filterTemples('all')">All</button>
-      <button onclick="filterTemples('old')">Old</button>
-      <button onclick="filterTemples('new')">New</button>
+      <button class="button-1" onclick="filterTemples('all')">All</button>
+      <button class="button-2" onclick="filterTemples('old')">Old</button>
+      <button class="button-3" onclick="filterTemples('new')">New</button>
     </div>
     <div class="gallery" id="gallery"></div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Temple Album</p>
-  </footer>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Douglas Justice - Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
 
-  <script src="filtered-temples.js"></script>
 </body>
 </html>

@@ -59,6 +59,59 @@ nav a:hover {
     margin: 0 auto;
 }
 
+.button-1, .button-2, .button-3{
+    background-color: #333;
+    color: #f8f9fa;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    border:solid;
+    border-radius: 8px;
+}
+
+.button-1{
+    margin-right: 40px;
+}
+
+.button-3{
+    margin-left: 40px;
+}
+
+.button-1:active{
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.button-2:active{
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.button-3:active{
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.button-1:hover{
+    cursor: pointer;
+    background-color: #585656;
+    text-decoration: underline;
+}
+
+.button-2:hover{
+    cursor: pointer;
+    background-color: #585656;
+    text-decoration: underline;
+}
+
+.button-3:hover{
+    cursor: pointer;
+    background-color: #585656;
+    text-decoration: underline;
+}
+
 figcaption {
     font-style: italic;
     margin-top: 10px;
