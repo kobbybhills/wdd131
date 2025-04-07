@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtered Temples</title>
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
-    <script defer src="scripts/filtered-temples.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temple Picture Album</title>
+  <link rel="stylesheet" href="filtered-temples.css" />
 </head>
-
 <body>
-    <header>
-        <h1>Filtered Temple Album</h1>
-        <button id="menu-toggle">☰</button>
-        <nav>
-            <ul id="menu">
-                <li><a href="#" data-filter="all">Home</a></li>
-                <li><a href="#" data-filter="old">Old</a></li>
-                <li><a href="#" data-filter="new">New</a></li>
-                <li><a href="#" data-filter="large">Large</a></li>
-                <li><a href="#" data-filter="small">Small</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Temple Picture Album</h1>
+    <nav>
+      <button id="menu-toggle">Menu</button>
+      <ul id="nav-menu" class="active">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Temples</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h2>Gallery of Temples</h2>
-    <main>
-        <div class="gallery" id="temple-cards"></div>
-    </main>
+  <main>
+    <div>
+      <button onclick="filterTemples('all')">All</button>
+      <button onclick="filterTemples('old')">Old</button>
+      <button onclick="filterTemples('new')">New</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </main>
 
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Douglas Justice - Ghana</p>
-        <p id="lastModified"></p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Temple Album</p>
+  </footer>
+
+  <script src="filtered-temples.js"></script>
 </body>
-
 </html>
