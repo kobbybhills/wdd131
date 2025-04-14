@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #013220;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: #032016;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(196, 241, 196);
+    border-radius: 10px;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
