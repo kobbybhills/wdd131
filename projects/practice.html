@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice Twi</title>
-  <link rel="stylesheet" href="siteplan.css">
-  <script src="siteplan.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice: Test Your Knowledge</title>
+    <link rel="stylesheet" href="siteplan.css">
 <body>
-  <header>
-    <h1>Practice Twi</h1>
-    <nav>
-      <ul>
-        <li><a href="siteplan.html">Site Plan</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="lessons.html">Lessons</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <fieldset>
-        <Legend>
-            QUIZ-SↃHWꜪ
-        </Legend>
-        <form id="practice-form">
-            <label for="name">Your name:</label>
-            <input type="text" id="name" name="name" required><br>
-      
-            <label for="answer">Translate 'Thank you' to Twi:</label>
-            <input type="text" id="answer" name="answer" required><br>
-      
-            <button type="submit">Translate</button>
-          </form>
-    </fieldset>
+    <header>
+        <h1>Learn Asante Twi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="siteplan.html">siteplan</a></li>
+                <li><a href="lessons.html">Lesson</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        
+        <section>
+            <div class="container">
+                <h1>Quiz</h1>
+                <form id="quizForm">
+                    <p>1. How do we say "Good morning" in Twi? </p>
+                    <input type="radio" name="q1" value="Maakye"> Maakye<br>
+                    <input type="radio" name="q1" value="Maadwo"> Maadwo<br>
+                    <input type="radio" name="q1" value="Maaha"> Maaha<br>
+        
+                    <p>2. How do we say "Good afternoon" in Twi?</p>
+                    <input type="radio" name="q2" value="Maakye"> Maakye<br>
+                    <input type="radio" name="q2" value="Maaha"> Maaha<br>
+                    <input type="radio" name="q2" value="Maadwo"> Maadwo<br>
+
+                    <p>3. How do we say "What is your name?" in Twi?</p>
+                    <input type="radio" name="q3" value="Wo din de sɛn?"> Wo din de sɛn?<br>
+                    <input type="radio" name="q3" value="Maaha"> Maaha<br>
+                    <input type="radio" name="q3" value="Ɛte sɛn?"> Ɛte sɛn?<br>
+
+                    <p>4. How do we say "God bless you." in Twi?</p>
+                    <input type="radio" name="q4" value="Yɛbɛhyia bio"> Yɛbɛhyia bio<br>
+                    <input type="radio" name="q4" value="Nyame nhyira wo."> Nyame nhyira wo.<br>
+                    <input type="radio" name="q4" value="Wo din de sɛn?"> Wo din de sɛn?<br>
+
+                    <p>5. How do we say "Where do you live?" in Twi?</p>
+                    <input type="radio" name="q5" value="Me ho yɛ. Na wo nso?"> Me ho yɛ.<br>
+                    <input type="radio" name="q5" value="Ɛhe na wo te?"> Ɛhe na wo te?<br>
+                    <input type="radio" name="q5" value="Wobɛtumi aboa me?"> Wobɛtumi aboa me?<br>
+        
+                    <br>
+                    <button type="button" onclick="checkQuiz()">Check Answers</button>
+                </form>
+        
+                <h2 id="result"></h2>
+                <div id="answers"></div>
+            </div>
+        </section>
+    </main>
     
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Douglas Justice | 2025 Learn Asante Twi | Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="siteplan.js"></script>
+    <script src="siteplanDates.js"></script>
     
-
-    <p id="feedback"></p>
-  </main>
-
-  <footer>
-    <p>&copy; Douglas Justice | 2025 Learn Asante Twi | Ghana </a></p>
-    <p id="last-modified"></p>
-  </footer>
-
 </body>
 </html>

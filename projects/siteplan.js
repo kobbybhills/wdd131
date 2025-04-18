@@ -1,46 +1,32 @@
-// Display the last modified date
-const lastModified = document.getElementById("last-modified");
-lastModifiedSpan.textContent = document.lastModified;
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("last-modified").textContent = new Date(document.lastModified).toLocaleString();
-});
+function checkQuiz() {
+    let score = 0;
+    let answers = {
+        q1: "Maakye",
+        q2: "Maaha",
+        q3: "Wo din de sɛn?",
+        q4: "Nyame nhyira wo.",
+        q5: "Ɛhe na wo te?",
+    };
 
+    let userAnswers = {
+        q1: document.querySelector('input[name="q1"]:checked')?.value,
+        q2: document.querySelector('input[name="q2"]:checked')?.value,
+        q3: document.querySelector('input[name="q3"]:checked')?.value,
+        q4: document.querySelector('input[name="q4"]:checked')?.value,
+        q5: document.querySelector('input[name="q5"]:checked')?.value,
+    };
 
+    let correctAnswers = `<div class="answers"><h3>Correct Answers:</h3><ul>`;
 
+    for (let key in answers) {
+        correctAnswers += `<li>${answers[key]}</li>`;
+        if (userAnswers[key] === answers[key]) {
+            score++;
+        }
+    }
 
-// Load vocabulary list
-const vocabList = [
-    { english: "Hello", twi: "Akwabaa" },
-    { english: "Thank you", twi: "Medaase" },
-    { english: "How are you?", twi: "Wo ho te sɛn?" },
-    { english: "I'm fine", twi: "Me ho yɛ" }
-  ];
-  
-  const listElement = document.getElementById("vocab-list");
-  if (listElement) {
-    vocabList.forEach(word => {
-      const li = document.createElement("li");
-      li.textContent = `${word.english} - ${word.twi}`;
-      listElement.appendChild(li);
-    });
-  }
-  
-  // Handle practice form
-  const form = document.getElementById("practice-form");
-  if (form) {
-    form.addEventListener("Translate", function (event) {
-      event.preventDefault();
-      const answer = document.getElementById("answer").value.trim().toLowerCase();
-      const feedback = document.getElementById("feedback");
-  
-      if (answer === "medaase") {
-        feedback.textContent = "Correct! Well done.";
-      } else {
-        feedback.textContent = "Oops! Try again. 'Thank you' in Twi is 'Medaase'.";
-      }
-  
-      // Store name in localStorage
-      const name = document.getElementById("name").value;
-      localStorage.setItem("username", name);
-    });
-  }
+    correctAnswers += `</ul></div>`;
+
+    document.getElementById("result").innerText = "Your score: " + score + "/5";
+    document.getElementById("answers").innerHTML = correctAnswers;
+}
